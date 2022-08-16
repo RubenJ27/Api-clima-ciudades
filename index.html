@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,17 +10,27 @@
   <link rel="stylesheet" href="css/styles.css">
   <title>Api del clima</title>
 </head>
+
 <body>
 
   <img src="https://cdn-icons-png.flaticon.com/512/2698/2698240.png" id="LogoPagina">
-    <h2>API Clima ciudades</h2>
+  <h2 class="title">API CLIMA CUIDADES</h2>
 
-    <div class="mb-3 mt-3 col-12 col-sm-3">
-      <label for="selectCiudad" class="form-label">Seleccione la ciudad</label>
-      <select id="selectCiudad" class="form-select"></select>
+  <div class="select__container">
+    <div class="select__container__column">
+      <label for="selectCity" class="select__container__item select__container__item--city">Seleccione la
+        ciudad</label>
+      <select id="selectCity" class="select__container__item"></select>
     </div>
   </div>
-  <button type="submit" class="btn btn-warning" id="boton">Buscar Clima</button>
-  
+  <button type="submit" class="btn-seacrh" id="btn">Buscar Clima</button>
+
+  <div class="container__weather"></div>
+
+
+  <script src="data/dropdown.js" type="module"></script>
+  <script src="data/index.js" type="module"></script>
 </body>
+
+
 </html>
