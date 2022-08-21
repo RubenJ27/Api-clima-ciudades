@@ -5,10 +5,20 @@
   font-family: "Segoe UI", "Roboto", Helvetica, Arial, sans-serif;
 }
 
+.container__api{
+  width: 100%;
+  height: 100vh;
+  background-color: #4864F8;
+}
+.container__api__img{
+  padding-top: 1rem;
+}
+
 #LogoPagina{
   display: block;
   animation: rotation 20s infinite linear;
-  margin: 0.5rem auto;
+  margin: auto;
+  margin-bottom: 0.5rem;
   justify-content: center;
   width: 5rem;
   height: 5rem;
@@ -24,7 +34,10 @@
 }
 
 .title{
+  font-size: 2rem;
+  color: white;
   text-align: center;
+  margin-bottom: 0.5rem;
 }
 
 .select__container{
@@ -41,7 +54,7 @@
 
 .select__container__item{
   display: block;
-  width: 20rem;
+  width: 15rem;
   padding: .375rem 2.25rem .375rem .75rem;
   -moz-padding-start: calc(0.75rem - 3px);
   font-size: 1rem;
@@ -69,6 +82,10 @@
 
 .select__container__item--city{
   display: flex;
+  font-size: 1.1rem;
+  color: white;
+  font-weight: 600;
+  background-color: transparent;
   flex-direction: row;
   padding: 0.8rem 0;
   justify-content: center;
@@ -96,4 +113,87 @@
   border-radius: .25rem;
   font-weight: 500;
   transition: color .15s ease-in-out,
+}
+
+hr{
+  justify-content: center;
+  width: 80%;
+  height: 0.1px;
+  margin: 3.6rem auto;
+  margin-bottom: 2rem;
+  background-color: gray;
+  border: 0;
+}
+
+.container__weather{
+  position: relative;
+  height: auto;
+}
+
+.container__weather__items{
+  display: flex;
+  justify-content: center;
+}
+
+.container__weather__item{
+  margin: 1rem 3rem;
+  margin-bottom: 0;
+}
+
+.container__weather__item__title{
+  display: block;
+  font-size: 3.5rem;
+  color: white;
+}
+
+.container__weather__item__country{
+  display: flex;
+  justify-content: center;
+  color: white;
+  margin: 0.7rem 0;
+}
+
+.container__weather__item__country-text{
+  font-weight: bold;
+  margin-right: 0.8rem;
+}
+.container__weather__item__flag{
+  width: 2rem;
+  height: 2rem;
+}
+
+.container__weather__item__coordinates{
+  margin: 1.7rem 0;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
+.container__weather__item__imgs{
+  display: flex;
+  justify-content: center;
+}
+.container__weather__item__img{
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background-color: #73CDEB;
+}
+
+.container__weather__item__temperature{
+  text-align: center;
+  margin: 0.5rem 0;
+  color: white;
+}
+
+.container__weather__item__temperature-min-max{
+  text-align: center;
+  margin: 0.5rem 0;
+  color: white;
+}
+
+.container__weather__item__description-main{
+  text-align: center;
+  margin: 0.5rem 0;
+  color: white;
 }

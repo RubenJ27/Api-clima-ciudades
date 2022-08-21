@@ -70,5 +70,9 @@ export const cities = [
   {
       id: 18,
       city: "Bamako"
-  }
+  },
+  {
+    id: 19,
+    city: "Quibdó"
+}
 ];
